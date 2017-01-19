@@ -26399,7 +26399,16 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>The model is incorrect in its initial prediction, incorrectly does not appear in the first K arrays, and the correct prediction appears in the first k arrays.</p>
+<p>The prediction accuracy on the five test images is 0%.<br>
+The probability of the first prediction is [0.07134952, 0.06437736, 0.06289245, 0.0516404, 0.04014536] respectively,<br>
+Corresponding to 10, 5, 3, 8, 20, respectively, and the actual value is 38. The correct prediction does not appear in the first five.<br>
+Likewise, the second prediction of the first five inside, [10, 5, 3, 8, 35], while the actual value is 39, the correct prediction does not appear in the first five inside.<br>
+The third prediction of the first five inside [10, 8, 5, 3, 26], the actual value of 33 correct predictions did not appear in the first five inside.<br>
+The first five of the fourth predictions [3, 5, 8, 10, 35], the actual value is 35 The correct prediction appears in the top five, but at the end.<br>
+The first five of the five predictions [10, 8, 5, 7, 3], the actual value is 9, the correct prediction does not appear in the first five inside.<br>
+Only the fourth has the predicted results in the first five, but the probability is too low.<br>
+<br>
+I think this is mainly caused by the quality of the picture,</p>
 
 </div>
 </div>
